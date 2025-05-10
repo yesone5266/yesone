@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ownglyph_ParkDaHyun';
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    height: 200vh;
+}
+
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    gap: 20px;
+    font-family: 'Ownglyph_ParkDaHyun';
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Ownglyph_ParkDaHyun';
+    word-break: keep-all;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Ownglyph_ParkDaHyun';
+}
+
+a{
+    word-break: keep-all;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 40px;
+}
+
+#picture {
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+#profile {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+li {
+    font-size: 25px;
+}
+
+#like_youtube {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#youtubes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.youtube_img {
+    border-radius: 50%;
+}
+
+.youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    gap: 10px;
+}
+
+.youtube_name {
+    font-family: 'Ownglyph_ParkDaHyun';
+    font-size: 25px
+}
+
+#like_music{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+#playlist{
+    display: flex;
+    gap: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+    #profile {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #youtubes {
+        flex-wrap: nowrap;
+    }
+
+    #like_youtube {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #like_youtube {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #picture{
+        height: 300px;
+        object-fit: cover;
+    }
+
+    li {
+        font-size: 20px
+    }
+
+    #playlist{
+        flex-direction: column;
+    }
+
+    iframe {
+        height: 152px;
+    }
+}
+
